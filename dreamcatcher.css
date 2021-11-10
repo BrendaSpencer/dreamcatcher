@@ -1,0 +1,187 @@
+/*algemeen*/
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+
+body{
+    
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding: 0 15%;
+    background-color: rgb(230, 236, 248);
+}
+
+/*hoofding*/
+.intro{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    align-self: center;
+    justify-self: center;
+    font-size: 250%;
+    color: white;
+    text-shadow: 5px 5px 4px black;
+}
+.cut-out{
+    
+    color: white;
+    text-shadow: black 5px 5px 5px;
+   
+  
+   }
+header{
+    display: grid;
+    grid-template-rows:repeat(5, 1fr);
+    background-image: url(img/beachA.jpg);
+    background-size: cover;
+    height: 500px;
+    background-repeat: repeat;
+   
+}
+
+.svg{
+    margin: 2%;
+    padding: 2%;
+    color: white;
+}
+h1,
+h2{
+   grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    padding: 1%;
+}
+/*einde hoofding*/
+
+/*main*/
+.omschrijving{
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+  padding:10% 20% 5% 20%;
+  margin: 3%;
+  
+}
+
+main img{
+    border: 10px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+/*egypte*/
+.title{
+    border: solid white 20px;
+      margin: 0;
+      min-height: 500px;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+}
+
+.egypte{
+    background-image: url(img/egypte2.jpg);
+}
+.chine{
+    background-image: url(img/china3.jpg);
+}
+.rus{
+    background-image: url(img/rusia2.jpg);
+}
+.griek{
+    background-image: url(img/greece2.jpg);
+}
+.venice{
+    background-image: url(img/venetie2.jpg);
+}
+
+h3{
+   padding: 2%;
+   position: absolute;
+    top: 40%;
+   right: 42%;
+   font-size: 250%;
+   font-weight: bold;
+    background-color: white;
+    color: black;
+    mix-blend-mode: screen;
+}
+/*button*/
+.button{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    width: 150px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition:.3s linear;
+}
+
+.button:hover{
+    transform: scale(1.1)
+}
+
+  .button span{
+    text-align: center;
+    line-height: 60px;
+    font-size: 150%;
+    position: absolute;
+    
+    width:100%;
+    height: 100%;
+    background-color: rgb(230, 236, 248);
+    z-index: 999;
+    transition: .7s linear;
+}
+
+.button:hover span{
+    transform: translateX(100%);
+    transition-delay: .4s;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*footer*/
+.sunset{
+    width: 100%;
+}
+footer{
+ background-color: white;
+}
+/*einde footer*/
+
+@media screen and (max-width: 992px) {
+    .svg{
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+   h1{
+       grid-row: 2/3;
+       grid-column: 1/4;
+
+   }
+   h2{
+    grid-row: 3/4;
+    grid-column: 1/4;
+   }
+   .intro{
+    grid-row: 4/6;
+    grid-column: 1/3;
+    font-size: 150%;
+   }
+  
+  }
+  
